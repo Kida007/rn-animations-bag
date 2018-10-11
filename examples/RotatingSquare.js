@@ -1,18 +1,21 @@
+//@flow
 import React, { Component } from 'react' ;
 import { View, Text, Animated, Easing} from 'react-native' ;
 
-class RotatingSquare extends Component {
+class RotatingSquare extends Component<{}> {
+
+  animatedValue : number ;
+  rotationValue : Animated.Value ;
 
   constructor(){
     super();
-    this.animatedValue = new Animated.Value(0) ;
+    this.animatedValue = new Animated.Value(0);
     this.rotationValue = new Animated.Value(0);
 
   }
 
   componentDidMount(){
     this.animate();
-
   }
 
 

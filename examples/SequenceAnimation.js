@@ -1,11 +1,13 @@
+//@flow
 import React from 'react';
 import { View, Animated, Easing, StatusBar} from 'react-native' ;
 
 const arr = []
 for ( let i=0; i<400; i++) arr.push(i)
 
-class SequenceAnimation extends React.Component {
+class SequenceAnimation extends React.Component<{}> {
 
+   animatedValue: Array<number> ;
 
   constructor(){
     super();
