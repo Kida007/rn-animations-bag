@@ -2,11 +2,11 @@ import React from 'react' ;
 import { StyleSheet, View, Button, LayoutAnimation } from 'react-native' ;
 import { Navigator, Route } from  '../libs/Navigator' ;
 
-class  Screen1 extends React.Component {
+const  Screen1 = (props) =>  {
 
-  render(){
 
-    const { navigator } = this.props ;
+
+    const { navigator } = props ;
 
     return(
       <View style={[ styles.screen, { backgroundColor:'#FFFFFF'}]}>
@@ -20,8 +20,8 @@ class  Screen1 extends React.Component {
           onPress={()=>navigator.pop()}
         />
       </View>
-    )
-  }
+    );
+
 
 }
 
@@ -75,6 +75,8 @@ class  Screen3 extends React.Component {
 
 export default class NavigationScreens extends React.Component {
   render(){
+
+    console.log(Screen1) ;
     return(
       <Navigator>
         <Route name='Screen1' component={Screen1}/>

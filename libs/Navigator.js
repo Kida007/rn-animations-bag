@@ -1,5 +1,5 @@
 import React from 'react' ;
-import { StyleSheet, View, Animated, Dimensions } from 'react-native' ;
+import { StyleSheet, View, Animated, Dimensions, PanResponder } from 'react-native' ;
 
 const { width } = Dimensions.get('window');
 
@@ -22,6 +22,48 @@ export const Route = () => null ;
 export class Navigator extends React.Component {
 
   _animatedValue = new Animated.Value(0);
+
+  _panResponder = PanResponder.create({
+
+    onMoveShouldSetPanResponder: (evt, gestureState) => {
+
+      const isFirstScreen =  this.state.stack.length === 1 ;
+      const isFarLeft  = evt.nativeEvent.pageX < Math.floor(width * 0.25) ;
+
+      if(!isFirstScreen && isFarLeft)
+        return true ;
+      return false ;
+    },
+
+    onPanResponderMove: (evt, gestureState) => {
+      this._animatedValue.setValue(evt.nativeEvent.pageX)
+
+    },
+
+    onPanResponderTerminationRequest: (evt, gestureState) => true ,
+
+    onPanResponderRelease: (evt, gestureState) => {
+
+      const transXValue = evt.nativeEvent.pageX ;
+
+      if(transXValue >=  width/2) this.handlePop();
+
+      else {
+        Animated.timing(this._animatedValue, {
+          toValue: 0,
+          duration: 250,
+          useNativeDriver: true,
+        }).start();
+      }
+
+
+    },
+
+    onPanResponderTermination: (evt, gestureState) => {
+
+    },
+
+  });
 
   constructor(props){
     super(props);
@@ -82,7 +124,7 @@ export class Navigator extends React.Component {
 
   render(){
     return (
-      <View style={styles.container}>
+      <View style={styles.container} { ...this._panResponder.panHandlers}>
         {
           this.state.stack.map((screen, index) => {
             const CurrentScreen = screen.component;
