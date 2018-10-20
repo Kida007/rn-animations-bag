@@ -3,6 +3,7 @@ import Spring from './Spring' ;
 import SequenceAnimation from './SequenceAnimation'
 import FlowClass from './flowClass' ;
 import NavigationScreens from './NavigationScreens';
+import DraggableBox from './DraggableBox';
 
 export {
   RotatingSquare,
@@ -10,4 +11,5 @@ export {
   SequenceAnimation,
   FlowClass,
   NavigationScreens,
+  DraggableBox,
 }
