@@ -4,6 +4,7 @@ import SequenceAnimation from './SequenceAnimation'
 import FlowClass from './flowClass' ;
 import NavigationScreens from './NavigationScreens';
 import DraggableBox from './DraggableBox';
+import BottomDragModal from './BottomDragModal';
 
 export {
   RotatingSquare,
@@ -12,4 +13,5 @@ export {
   FlowClass,
   NavigationScreens,
   DraggableBox,
+  BottomDragModal,
 }
