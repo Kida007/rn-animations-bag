@@ -4,8 +4,6 @@ import { Navigator, Route } from  '../libs/Navigator' ;
 
 const  Screen1 = (props) =>  {
 
-
-
     const { navigator } = props ;
 
     return(
