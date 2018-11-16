@@ -6,6 +6,7 @@ import NavigationScreens from './NavigationScreens';
 import DraggableBox from './DraggableBox';
 import BottomDragModal from './BottomDragModal';
 import FbCircles from './FbCircles';
+import SvgBasic from './SvgBasic';
 
 export {
   RotatingSquare,
@@ -16,4 +17,5 @@ export {
   DraggableBox,
   BottomDragModal,
   FbCircles,
+  SvgBasic,
 };

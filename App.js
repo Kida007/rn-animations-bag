@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import * as React from 'react';
 import {
   RotatingSquare,
@@ -8,13 +9,14 @@ import {
   DraggableBox,
   BottomDragModal,
   FbCircles,
+  SvgBasic,
 } from './examples';
 
 type Props = {};
 
 class App extends React.Component<Props> {
   render() {
-    return <FbCircles />;
+    return <SvgBasic />;
   }
 }
 
