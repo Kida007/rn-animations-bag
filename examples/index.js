@@ -7,6 +7,7 @@ import DraggableBox from './DraggableBox';
 import BottomDragModal from './BottomDragModal';
 import FbCircles from './FbCircles';
 import SvgBasic from './SvgBasic';
+import SoundCloudPlayer from './SoundCloudPlayer';
 
 export {
   RotatingSquare,
@@ -18,4 +19,5 @@ export {
   BottomDragModal,
   FbCircles,
   SvgBasic,
+  SoundCloudPlayer,
 };

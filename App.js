@@ -10,13 +10,14 @@ import {
   BottomDragModal,
   FbCircles,
   SvgBasic,
+  SoundCloudPlayer,
 } from './examples';
 
 type Props = {};
 
 class App extends React.Component<Props> {
   render() {
-    return <SvgBasic />;
+    return <SoundCloudPlayer />;
   }
 }
 
