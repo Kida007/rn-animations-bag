@@ -8,6 +8,8 @@ import BottomDragModal from './BottomDragModal';
 import FbCircles from './FbCircles';
 import SvgBasic from './SvgBasic';
 import SoundCloudPlayer from './SoundCloudPlayer';
+import AppleWallet from './AppleWallet';
+
 
 export {
   RotatingSquare,
@@ -20,4 +22,5 @@ export {
   FbCircles,
   SvgBasic,
   SoundCloudPlayer,
+  AppleWallet,
 };

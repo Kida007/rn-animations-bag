@@ -11,13 +11,14 @@ import {
   FbCircles,
   SvgBasic,
   SoundCloudPlayer,
+  AppleWallet,
 } from './examples';
 
 type Props = {};
 
 class App extends React.Component<Props> {
   render() {
-    return <SoundCloudPlayer />;
+    return <AppleWallet />;
   }
 }
 
