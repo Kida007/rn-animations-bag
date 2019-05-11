@@ -29,7 +29,7 @@ class DraggableBox extends React.Component {
       onPanResponderRelease: (e, gestureState) => {
         this.animatedValue.flattenOffset();
         Animated.decay(this.animatedValue, {
-          deceleration: 0.89, velocity: { x: gestureState.vx, y: gestureState.vy } }).start();
+          deceleration: 0.5, velocity: { x: gestureState.vx, y: gestureState.vy } }).start();
       },
     });
   }

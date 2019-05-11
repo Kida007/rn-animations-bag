@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import * as React from 'react';
+import * as React from "react";
 import {
   RotatingSquare,
   Spring,
@@ -12,13 +12,19 @@ import {
   SvgBasic,
   SoundCloudPlayer,
   AppleWallet,
-} from './examples';
+  DB,
+  AnimatedFlatlist,
+  Magic,
+  SexyScrollable
+} from "./examples";
+
+import { View } from "react-native";
 
 type Props = {};
 
 class App extends React.Component<Props> {
   render() {
-    return <AppleWallet />;
+    return <SexyScrollable />;
   }
 }
 

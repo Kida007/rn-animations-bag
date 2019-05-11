@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, SafeAreaView, Text, Animated, StyleSheet, Dimensions, PanResponder } from 'react-native';
+import { View, SafeAreaView, Animated, StyleSheet, Dimensions, PanResponder } from 'react-native';
 import cards from './data/cards';
 
 
