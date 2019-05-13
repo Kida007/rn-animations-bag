@@ -30,6 +30,7 @@ render(){
 ```
 npm install or yarn
 react-native link react-native-svg
+react-native link react-native-reanimated
 ```
 4. run it
 ```
