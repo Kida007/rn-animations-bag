@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="365px" height="365px" viewBox="0 0 365 365" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 45</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-45">
+            <circle id="Oval" fill="url(#linearGradient-1)" cx="182.5" cy="182.5" r="182.5"></circle>
+            <circle id="Oval" fill="#EDEDED" cx="182" cy="182" r="178"></circle>
+            <circle id="Oval" fill="#000000" opacity="0.05" cx="125" cy="63" r="22"></circle>
+            <circle id="Oval" fill="#000000" opacity="0.05" cx="214" cy="157" r="45"></circle>
+        </g>
+    </g>
+</svg>
