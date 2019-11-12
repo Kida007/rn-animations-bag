@@ -1,5 +1,7 @@
 # rn-animations-bag
 
+# NOT MAINTAINED :(
+
 this project contains some of the coolest RN animation examples/ excercises to start with.
 contains many examples with React Native's *Animated*, *PanResponder* and *react-native-svg*
 
